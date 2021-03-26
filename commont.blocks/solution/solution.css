@@ -1,0 +1,117 @@
+.solution {
+    display: flex;
+    justify-content: center;
+    margin-top: 165px;
+    margin: 165px 0 175px 0; 
+}
+.solution .solutuon__wrap {
+    display: grid;
+    grid-template-columns: 790px 1fr;
+}
+.solution .solution__text {
+    order: 1;
+}
+.solution .solution__text p {
+    font-size: 18px;
+    font-family: 'MyriadProLightSemiExt';
+    font-weight: 800;
+}
+.solution .solution__text .solution__text__title {
+    margin-bottom: 25px;
+}
+.solution .solution__text .solution__text__title-two {
+    margin: 30px 0 25px 0;
+}
+.solution .solution__text button {
+    font-family: 'MyriadProLightSemiExt';
+    font-size: 22px;
+    color: #fff;
+    padding: 5px 15px;
+    background: #232323;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: none;
+    margin-top: 35px;
+    outline: none;
+}
+.solution .solution__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    order: 2;
+}
+.solution .solution__info__wrap {
+    max-width: 324px;
+}
+.solution .solution__info img {
+    margin-bottom: 25px;
+}
+.solution .solution__info p {
+    font-family: 'MyriadProLightSemiExt';
+    color: #777777;
+    font-weight: 800;
+    font-size: 14px;
+}
+.solution .solution__info h2 {
+    font-family: 'MyriadProLightSemiExt';
+    color: #171717;
+    font-weight: 800;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.solution .solution__info h4 {
+    font-family: 'MyriadProLightSemiExt';
+    color: #171717;
+    font-weight: 800;
+    font-size: 16px;
+}
+.solution .solution__info p:last-child {
+    font-size: 16px;
+}
+.solution .solution__info__text {
+    margin-top: 25px;
+}
+
+@media screen and (min-width: 750px) and (max-width: 1199px) {
+    .solution .solutuon__wrap {
+        grid-template-columns: 1fr;
+    }
+    .solution .solution__info {
+        align-items: center;
+        margin-top: 20px;
+    }
+    .solution .solution__text .solution__text__title {
+        font-size: 26px;
+    }
+    .solution .solution__text p {
+        font-size: 14px;
+    }
+    .solution .solution__text .solution__text__title-two {
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 749px) {
+    .solution .solutuon__wrap {
+        grid-template-columns: 1fr;
+    }
+    .solution .solution__text {
+        order: 2;
+    }
+    .solution .solution__info {
+        order: 1;
+        align-items: flex-start;
+    }
+    .solution .solution__text .solution__text__title {
+        font-size: 27px;
+        margin-top: 80px;
+        font-weight: 800;
+    }
+    .--hide {
+        display: none;
+    }
+}

@@ -1,0 +1,138 @@
+.footer {
+    min-width: 100%;
+    max-width: 100%;
+}
+.footer .footer__item--dark {
+    padding-top: 90px;
+    background: #232323;
+    display: flex;
+    justify-content: center;
+}
+.footer .footer__item-menu h4 {
+    color: #777777;
+    font-family: 'MyriadProLightSemiExt';
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+.footer .footer__item-menu ul {
+    margin: 0;
+    padding: 0;
+}
+.footer .footer__item-menu ul li {
+    list-style-type: none;
+}
+.footer .footer__item-menu ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'MyriadProLightSemiExt';
+}
+.footer .footer__dark_wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 80px;
+}
+.footer .footer__item-contact h4{
+    color: #777777;
+    font-family: 'MyriadProLightSemiExt';
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+.footer .footer__item-contact a, .footer .footer__item-contact p {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'MyriadProLightSemiExt';
+}
+.footer .item-contact__call {
+    display: grid;
+}
+.item-contact__mail {
+    display: grid;
+    margin-top: 15px;
+}
+.footer .item-contact__time {
+    margin-top: 15px;
+}
+.footer .item-contact__adress {
+    margin-top: 15px;
+}
+.footer .item-contact__adress a {
+    cursor: pointer !important;
+}
+
+.footer .footer__item-darkest {
+    background: #191919;
+    display: flex;
+    justify-content: center;
+}
+.footer .footer__wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 25px 0;
+}
+.footer .footer__logo a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    font-family: 'MyriadProLightSemiExt';
+}
+.footer .logo__text {
+    margin-left: 15px;
+}
+.footer .footer__logo h2 {
+    color: #fff;
+}
+.footer .footer__logo p {
+    color: #787878;
+}
+.footer .footer__work a {
+    font-family: 'MyriadProLightSemiExt';
+    text-decoration: none;
+    color: #fff;
+}
+.footer .mobil__item-menu {
+    display: none;
+    width: 100%;
+}
+.footer .mobil__item-menu ul{
+    display: grid;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.footer .mobil__item-menu ul li {
+    list-style: none;
+    color: #ffffff;
+    font-family: 'MyriadProLightSemiExt';   
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #4b4b4b;
+    padding: 20px 0 20px 0;
+}
+.footer .mobil__item-menu ul li:last-child {
+    border-bottom: none;
+}
+.footer .mobil__item-menu ul li a {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+}
+@media screen and (min-width: 0) and (max-width: 749px) {
+    .footer .footer__wrap {
+        display: grid;
+        padding: 35px 0 35px 0;
+    }
+    .footer .footer__work {
+        margin-top: 10px;
+    }
+    .footer__item-menu {
+        display: none;
+    }
+    .footer__item-contact {
+        display: none;
+    }
+    .footer .mobil__item-menu {
+        display: grid;
+    }
+}

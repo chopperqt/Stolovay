@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Столовая.РУ</title>
+    
+    <link rel="stylesheet" href="./commont.blocks/header/header.css">
+    <link rel="stylesheet" href="./commont.blocks/begest-menu/begest-menu.css">
+    <link rel="stylesheet" href="./commont.blocks/news/news.css">
+    <link rel="stylesheet" href="./commont.blocks/recomend/recomend.css">
+    <link rel="stylesheet" href="./commont.blocks/solution/solution.css">
+    <link rel="stylesheet" href="/commont.blocks/footer/footer.css">
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./ico/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="./ico/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="./ico/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="./ico/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="./ico/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="./ico/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="./ico/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="./ico/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="./ico/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="./ico/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./ico/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="./ico/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./ico/favicon-16x16.png">
+<link rel="manifest" href="./ico/manifest.json">
+
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="./ico/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+</head>
+<body>
+    <header class="header">
+        <div class="header__mobil">
+            <div class="mobil__up">
+                <button class="mobil_btn">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </button>
+                <a href="/" class="up__logo">
+                    <img src="./commont.blocks/header/_img/mobil_logo.png" alt="mobil logo">
+                    <div class="up__text">
+                        <h5>Столовая.РУ</h5>
+                        <p>Создание пищеблоков</p>
+                    </div>
+                </a>
+                <div class="up__menu">
+                    <button><img src="./commont.blocks/header/_img/mobil__search.png" alt="search"></button>
+                    <a href="tel:88888888"><img src="./commont.blocks/header/_img/mobil__phone.png" alt="phone"></a>
+                    <a class="up__menu__cart" href="">
+                        <p>12</p>
+                        <img src="./commont.blocks/header/_img/mobil_cart.png" alt="cart">
+                    </a>
+                </div>
+            </div>
+            <div class="mobil__down">
+                <a href="/">
+                    <p>Оборудование</p><p>></p>
+                </a>
+            </div>
+        </div>
+        <div class="header__header-wrap-top">
+            <div class="header__container--custom">
+                <div class="header__top-menu">
+                        <a href="/">Компания</a>
+                        <a href="/">Портфолио</a>
+                        <a href="/">Проектирование</a>
+                        <a href="/" class="--border-left">Ресторанам</a>
+                        <a href="/">Застройщикам</a>
+                        <a href="/">Го.заказчикам</a>
+                        <a href="/">Таблет-питание</a>
+                        <a href="/" class="--border-left">Сервис</a>
+                        <a href="/">Контакты</a>
+                        <div class="top-menu__email-copy">
+                            <a href="#" class="email-elem" onclick="handleClickCopy(event)"><img src="./commont.blocks/header/_img/top_email.png" alt="email"> info@stolovay.ru</a>
+                            <button onclick="onClickCopyBtn()" class="copy-btn">Скопировать</button>
+                        </div>
+                        <a onmouseover="viewPopup()" class="hover__item" href="tel:84957907205"><img src="./commont.blocks/header/_img/top_phone.png" alt=""> 8 495 790-72-05</a>
+                        <div class="top-menu__popup" onmouseleave="handleClose()">
+                            <div class="top-menu__pupup__close">
+                                <button onclick="handleClose()"><img src="./commont.blocks/header/_img/Х.png" alt="x"></button>
+                            </div>
+                            <div class="top-menu__popup__wrap">
+                                <div class="top-menu__item">
+                                    <h2>8 495 790-72-05</h2>
+                                    <h5>Мы принимаем звонки без выходных.</h5>
+    
+                                    <p>Выберите способ связи:</p>
+                                    <ul class="top-menu__social">
+                                        <li>
+                                            <a href="/">
+                                                <div class="social__image">
+                                                    <img src="./commont.blocks/header/_img/phone.png" alt="call">
+                                                </div>
+                                                <p>Мобильный</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/">
+                                                <div class="social__image">
+                                                    <img src="./commont.blocks/header/_img/viber.png" alt="Viber">
+                                                </div>
+                                                
+                                                <p>Viber</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/">
+                                                <div class="social__image">
+                                                    <img src="./commont.blocks/header/_img/tel.png" alt="telegramm">
+                                                </div>
+                                                <p>Telegrram</p>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/">
+                                                <div class="social__image">
+                                                    <img src="./commont.blocks/header/_img/wapp.png" alt="WhatsApp">
+                                                </div>
+                                                <p>What</p>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="top-menu__item">
+                                    <h3>Обратный звонок:</h3>
+                                    <h5>Мы перезвоним вам в течении часа</h5>
+                                    <form action="">
+                                        <label for="name">Имя:</label>
+                                        <input name="name" type="text">
+                                        <label for="phone">Телефон:</label>
+                                        <input name="phone" type="text">
+                                        <button>Отправить</button>
+                                    </form>
+                                </div>
+                            </div>
+                            
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__header-wrap-middle">
+            <div class="header__container">
+                <div class="header__middle-menu">
+                    <div class="header-logo">
+                        <img class="header-logo__logo" src="./commont.blocks/header/_img/logo.png" alt="logo">
+                        <h1 class="header-logo__text">Столовая.РУ</h1>
+                    </div>
+                    <div class="header-search">
+                        <button onClick="viewSelectPopup()" class="header-search__select">Все <img src="./commont.blocks/header/_img/arrow__down.png" alt="arrow-down"></button>
+                        <div class="select-popup">
+                            <h4>Выберите категорию:</h4>
+                            <ul>
+                                <li onClick="selectItem(event,'Тепловое')">Тепловое</li>
+                                <li onClick="selectItem(event,'Холодильное')">Холодильное</li>
+                                <li onClick="selectItem(event,'Электромеханическое')">Электромеханическое</li>
+                                <li onClick="selectItem(event,'Посудомоечное')">Посудомоечное</li>
+                                <li onClick="selectItem(event,'Барное')">Барное</li>
+                                <li onClick="selectItem(event,'Хлебопекраное')">Хлебопекраное</li>
+                                <li onClick="selectItem(event,'Линии раздачи')">Линии раздачи</li>
+                                <li onClick="selectItem(event,'Нейтральное')">Нейтральное</li>
+                                <li onClick="selectItem(event,'Для фаст фуда')">Для фаст фуда</li>
+                                <li onClick="selectItem(event,'Для залов')">Для залов</li>
+                                <li onClick="selectItem(event,'Весовое')">Весовое</li>
+                            </ul>
+                        </div>
+                        <div class="header-search__wrap">
+                            <input class="header-search__input" type="text" onkeyup="handleValue(event)">
+                            <div class="search-popup">
+                                <div class="search-pupup__item">
+                                    <a href="/">
+                                        <h5>Посудомоечная машина купольного типа МПК-700К</h5>
+                                        <p>Посудомоечное</p>
+                                    </a>
+                                </div>
+                                <div class="search-pupup__item">
+                                    <a href="/">
+                                        <h5>Посудомоечная машина купольного типа МПК-700К</h5>
+                                        <p>Посудомоечное</p>
+                                    </a>
+                                </div>
+                                <div class="search-pupup__item">
+                                    <a href="/">
+                                        <h5>Посудомоечная машина купольного типа МПК-700К</h5>
+                                        <p>Посудомоечное</p>
+                                    </a>
+                                </div>
+                                <div class="search-pupup__item">
+                                    <a href="/">
+                                        <h5>Посудомоечная машина купольного типа МПК-700К</h5>
+                                        <p>Посудомоечное</p>
+                                    </a>
+                                </div>
+                                <div class="search-pupup__item">
+                                    <a href="/">
+                                        <h5>Посудомоечная машина купольного типа МПК-700К</h5>
+                                        <p>Посудомоечное</p>
+                                    </a>
+                                </div>
+                                <div class="search-pupup__item">
+                                    <a href="/">
+                                        <h5>Посудомоечная машина купольного типа МПК-700К</h5>
+                                        <p>Посудомоечное</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="header-search__btn"><img src="./commont.blocks/header/_img/search.png" alt="search"></button>
+                    </div>
+                    <div class="header-info">
+                        <div class="header-info__provider">
+                            <a href="/" onmouseover="mouseOn()" onmouseout="mouseOut()">
+                                <img class="header-info__provider__img" src="./commont.blocks/header/_img/picture1.png" alt="provider">
+                                <div class="header-info__privder__wrap">
+                                    <p class="header-info__privder__wrap__text">Мы на портале</p>
+                                    <p>поставщики</p>
+                                </div>
+                            </a>
+                            
+                        </div>
+                        <div class="header-info__cart">
+                            <div class="header-info__cart__count">
+                                <span>12</span>
+                                <img src="./commont.blocks/header/_img/cart.png" alt="">
+                            </div>
+                            <div class="header-info__cart__price">
+                                <p>Сумма</p>
+                                <h5>150 000 руб</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="header__header-wrap-down">
+            <div class="header__container">
+                <div class="header__down-menu">
+                    <li class="header__down-menu__item">
+                        <a href="">
+                            <img src="./commont.blocks/header/_img/thermal.png" alt="themal">
+                            <p>Тепловое</p>
+                        </a>
+                    </li>
+                    <li class="header__down-menu__item">
+                        <a href="">
+                            <img src="./commont.blocks/header/_img/ice.png" alt="ice">
+                            <p>Холодильное</p>
+                        </a>
+                    </li>
+                    <li class="header__down-menu__item">
+                        <a href="">
+                            <img src="./commont.blocks/header/_img/elec.png" alt="elec">
+                            <p>Электромеханическое</p>
+                        </a>
+                    </li>
+                    <li class="header__down-menu__item">
+                        <a href="">
+                            <img src="./commont.blocks/header/_img/plate.png" alt="plate">
+                            <p>Посудомоечное</p>
+                        </a>
+                    </li>
+                    <li class="header__down-menu__item">
+                        <a href="">
+                            <img src="./commont.blocks/header/_img/bread.png" alt="bread">
+                            <p>Хлебопекарное</p>
+                        </a>
+                    </li>
+                    <li class="header__down-menu__item">
+                        <a href="">
+                            <img src="./commont.blocks/header/_img/line.png" alt="line">
+                            <p>Линии раздачи</p>
+                        </a>
+                    </li>
+                    <li class="header__down-menu__item">
+                        <a href="">
+                            <img src="./commont.blocks/header/_img/neutral.png" alt="neutral">
+                            <p>Нейтральное</p>
+                        </a>
+                    </li>
+                    <li class="header__down-menu__item">
+                        <a href="">
+                            <img src="./commont.blocks/header/_img/fastfood.png" alt="fastfood">
+                            <p>Для фаст фуда</p>
+                        </a>
+                    </li>
+                    <li class="header__down-menu__item">
+                        <a href="">
+                            <img src="./commont.blocks/header/_img/hole.png" alt="hole">
+                            <p>Для залов</p>
+                        </a>
+                    </li>
+                    <li class="header__down-menu__item">
+                        <a href="">
+                            <img src="./commont.blocks/header/_img/helps.png" alt="help">
+                            <p>Вспомогательное</p>
+                        </a>
+                    </li>
+                    <li class="header__down-menu__item">
+                        <a href="">
+                            <img src="./commont.blocks/header/_img/shop.png" alt="shop">
+                            <p>Для магазинов</p>
+                        </a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="bigest-menu">
+        <div class="drop-down__wrap">
+            <button onclick="viewDropDownMenu()" class="drop-down__btn"><img src="./commont.blocks/begest-menu/_img/arrow_left_dark.png" alt="arrow"></button>
+        </div>
+        <div class="drop-down__menu" id="close" onmouseleave="closeMenu(event)">
+            <div class="menu__long">
+                <ul class="long__item--first">
+                    <li>
+                        <a href="/">Холодильные шкафы</a>
+                        <span>></span>
+                    </li>
+                    <li>
+                        <a href="/">Камеры холодильные</a>
+                        <span>></span>
+                    </li>
+                    <li>
+                        <a href="/">Моноблоки</a>
+                        <span>></span>
+                    </li>
+                    <li>
+                        <a href="/">Сплит-системы</a>
+                        <span>></span>
+                    </li>
+                    <li>
+                        <a href="/">Столы холодильные</a>
+                        <span>></span>
+                    </li>
+                    <li>
+                        <a href="/">Витрины холодильные</a>
+                        <span>></span>
+                    </li>
+                    <li>
+                        <a href="/">Горки холодильные</a>
+                        <span>></span>
+                    </li>
+                    <li>
+                        <a href="/">Бонеты</a>
+                        <span>></span>
+                    </li>
+                    <li>
+                        <a href="/">Лари морозильные</a>
+                        <span>></span>
+                    </li>
+                    <li>
+                        <a href="/">Льдогенераторы</a>
+                        <span>></span>
+                    </li>
+                    <li>
+                        <a href="/">Шкафы шоковой заморозки</a>
+                        <span>></span>
+                    </li>
+                    <li>
+                        <a href="/">Кагераторы</a>
+                        <span>></span>
+                    </li>
+                </ul>
+                <div class="long__item--second">
+                    <ul>
+                        <li><a href="/">Среднетемпературные</a></li>
+                        <li><a href="/">Низкотемпературные</a></li>
+                        <li><a href="/">Универсальные</a></li>
+                        <li><a href="/">Комбинированные</a></li>
+                        <li><a href="/">Барные</a></li>
+                        <li><a href="/">Все сразу</a></li>
+                    </ul>
+                    <ul class="long__item-countries">
+                        <li>Страны</li>
+                        <li><a href="/"><img src="./commont.blocks/begest-menu/_img/Spain.png" alt="Spain">Испания</a></li>
+                        <li><a href="/"><img src="./commont.blocks/begest-menu/_img/ital.png" alt="Italy">Италия</a></li>
+                        <li><a href="/"><img src="./commont.blocks/begest-menu/_img/Germany.png" alt="Germany">Германия</a></li>
+                        <li><a href="/"><img src="./commont.blocks/begest-menu/_img/Turkey.png" alt="Turkey">Турция</a></li>
+                    </ul>
+                </div>
+                <div class="long__item--third">
+                    <h5>Бренды</h5>
+                    <ul>
+                        <li><a href="/" class="--caps">electrolux</a></li>
+                        <li><a href="/">Gastrorag</a></li>
+                        <li><a href="/" class="--caps">ариада</a></li>
+                        <li><a href="/">Abat</a></li>
+                        <li><a href="/" class="--caps">mxm</a></li>
+                        <li><a href="/" class="--caps">полюс</a></li>
+                        <li><a href="/">Hicold</a></li>
+                        <li><a href="/" class="--caps">polair</a></li>
+                        <li><a href="/">Премьер</a></li>
+                        <li><a href="/">Бирюса</a></li>
+                        <li><a href="/">Россия</a></li>
+                        <li><a href="/" class="--caps">tefcold</a></li>
+                    </ul>
+                </div>
+                <div class="long__item--four">
+                    <img src="./commont.blocks/begest-menu/_img/icetruck.png" alt="icetruck">
+                    <h2>Холодное оборудование</h2>
+                    <button>Все сразу</button>
+                </div>
+            </div>
+        </div>
+        <div class="container --mobil-container">
+            <div class="bigest-menu__wrap">
+                <div class="bigest-menu__wrap__offer">
+                    <div class="offer__title">
+                        <h3>Целевые предложения</h3>
+                    </div>
+                    <ul class="offer__offers">
+                        <li><a href="/">Кафе, барам, ресторанам</a> <span>></span></li>
+                        <li><a href="/">Дестким садам и школам</a> <span>></span></li>
+                        <li><a href="/">Таблет-питание</a> <span>></span></li>
+                        <li><a href="/">Для столовых</a> <span>></span></li>
+                        <li><a href="/">Для пищеблоков</a> <span>></span></li>
+                        <li><a href="/">Государственным заказкам</a> <span>></span></li>
+                        <li><a href="/">Для магазинов</a> <span>></span></li>
+                        <li><a href="/">Для войсковых частей</a> <span>></span></li>
+                        <li><a href="/">Все предложения</a> <span>></span></li>
+                    </ul>
+                </div>
+                <div class="bigest-menu__wrap__slider">
+                    <div class="slider-item">
+                        <div class="slider-item__text">
+                            <h5>Портфолио</h5>
+                            <h2>НИИ скорой помощи</h2>
+                            <h2 class="slider-item__text--margin">им. Н.В. Склифосовского</h2>
+                            <p>Оборудование для пищеблоков</p>
+                            <button>Подробнее</button>
+                        </div>
+                        <div class="slider-item__img">
+                            <img src="./commont.blocks/begest-menu/_img/img1.png" alt="icetruck">
+                        </div>
+                    </div>
+                    <div class="slider__navigation">
+                        <button><img src="./commont.blocks/header/_img/arrow_right.png" alt="arrow-right"></button>
+                        <div class="navigation__bar">
+                            <div class="bar__item"></div>
+                            <div id="active__bar__item" class="bar__item"></div>
+                            <div class="bar__item"></div>
+                            <div class="bar__item"></div>
+                        </div>
+                        <button><img src="./commont.blocks/header/_img/arrow_left.png" alt="arrow-left"></button>
+                    </div>
+                </div>
+                <div class="bigest-menu__wrap__sale">
+                    <img src="./commont.blocks/begest-menu/_img/gift.png" alt="gift">
+                    <p>Самые низкие цены</p>
+                    <h2>Распродажа</h2>
+                    <a href="/">Каталог распродаж  ></a>
+                </div>
+            </div>
+            <div class="bigest-menu__wrap__brends">
+                <ul class="brends">
+                    <li>
+                        <a href="/">
+                            <img src="./commont.blocks/begest-menu/_img/brend1.png" alt="abat">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="--border-mobil-none">
+                            <img src="./commont.blocks/begest-menu/_img/brend2.png" alt="Atesy">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <img src="./commont.blocks/begest-menu/_img/brend3.png" alt="hilcold">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/" class="--border-mobil-none">
+                            <img src="./commont.blocks/begest-menu/_img/brend4.png" alt="rational">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/">
+                            <img src="./commont.blocks/begest-menu/_img/brend5.png" alt="simeco">
+                        </a>
+                    </li>
+                    <li><a href="/" class="--border-mobil-none">Все бренды</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section class="news">
+        <div class="container-small">
+            <div class="news__title --title">
+                <h1>Новости производителей</h1>
+            </div>
+            <div class="news__wrap">
+                <div class="news__wrap__big-item">
+                    <img src="./commont.blocks/news/_img/pic1.png" alt="baker">
+                    <div class="big-item__time">
+                        <p class="big-item__author">Abat</p>
+                        <p>22.06.17</p>
+                    </div>
+                    <div class="big-item__text">
+                        <h4>Новый разборный ротационный пекарский шкаф РПЩ-18-8-6МР</h4>
+                        <p>Новый разборный ротационный пекарский шкаф РПШ-18-8-6МР:  в комплекте тележка-шпилька ТШГ-18 на 18 уровней 600х800 мм вместимость тележки-шпильки - 135 хлебных форм №7 инжекционный тип парообразования разборная конструкция увеличенное стекло двери. Память на 110 программ (до 4-ех этапов в каждой программе) USB-порт. Таймер до 10 ч Регулировка влажности от 0 до 100%.  5 скоро</p>
+                        <button>Все новости</button>
+                    </div>
+                </div>
+                <div class="news__wrap__small-item">
+                    <div class="small-item__item">
+                        <img src="./commont.blocks/news/_img/pic2.png" alt="icetruck">
+                        <div class="small-item__item__text">
+                            <h5><span class="--green">Abat</span><span>22.06.17</span></h5>
+                            <h4>Повышение энергоэффективности туннельных посудомоечных машин МПТ торговой марки Abat</h4>
+                            <p>С целью снижения нагрузки на электрическую сеть и для повышения энергоэффективности изделий с 1 июня 2017 года был изменен алгоритм работы туннельных посудомоечных машин МПТ торговой марки Abat всех моделей...</p>
+                        </div>
+                    </div>
+                    <div class="small-item__item">
+                        <img src="./commont.blocks/news/_img/pic2.png" alt="icetruck">
+                        <div class="small-item__item__text">
+                            <h5 class="--display"><span class="--green">Abat</span><span>22.06.17</span></h5>
+                            <h4>Повышение энергоэффективности туннельных посудомоечных машин МПТ торговой марки Abat</h4>
+                            <p>С целью снижения нагрузки на электрическую сеть и для повышения энергоэффективности изделий с 1 июня 2017 года был изменен алгоритм работы туннельных посудомоечных машин МПТ торговой марки Abat всех моделей...</p>
+                        </div>
+                    </div>
+                    <div class="small-item__item">
+                        <img src="./commont.blocks/news/_img/pic2.png" alt="icetruck">
+                        <div class="small-item__item__text">
+                            <h5><span class="--green">Abat</span><span>22.06.17</span></h5>
+                            <h4>Повышение энергоэффективности туннельных посудомоечных машин МПТ торговой марки Abat</h4>
+                            <p>С целью снижения нагрузки на электрическую сеть и для повышения энергоэффективности изделий с 1 июня 2017 года был изменен алгоритм работы туннельных посудомоечных машин МПТ торговой марки Abat всех моделей...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="recomend">
+        <div class="container-small">
+            <div class="recomend__title  --title">
+                <h1 class="">Рекомендуем</h1>
+                <p>В этих разделах вы можете получить подробную информацию о пищевом оборудовании для столовых, ресторанов и кафе ведущих производителей.</p>
+            </div>
+            <div class="recomend__wrap">
+                <div class="recomend__wrap__big-item --title-black">
+                    <h5>ration</h5>
+                    <h4>Пароконвектоматы</h4>
+                    <p class="big-item__text">Педантичность и преданность своему делу делает продукцию Rational идеальной для тех, кто ищет надежность и долговечность.</p>
+                    <img src="./commont.blocks/recomend/_img/plate.png" alt="parokonvektomti">
+                </div>
+                <div class="recomend__wrap__small-item ">
+                    <div class="small-item__item mobil-small-item__item  --light">
+                        <div class="small-item__item__text --title-black">
+                            <h5>hicold</h5>
+                            <h4>Холдильные столы</h4>
+                            <p>Многофункциональность оборудования позволяет оптимизировать пространство на кухне, сделать работу персонала максимально удобной и эффективной.</p>
+                        </div> 
+                        <img src="./commont.blocks/recomend/_img/plate2.png" alt="plita">
+                    </div>
+                    <div class="small-item__item --dark">
+                        <img src="./commont.blocks/recomend/_img/plit1.png" alt="plita">
+                        <div class="small-item__item__text --title-white">
+                            <h5>abat</h5>
+                            <h4>Тепловое</h4>
+                            <h4>оборудование</h4>
+                            <p>Более 55 лет успешно работает на рынке торгово-технологического оборудования, по праву занимая лидирующее положение в данном сегменте.</p>
+                        </div>
+                    </div>
+                    <div class="small-item__item  --light">
+                        <div class="small-item__item__text --title-black">
+                            <h5>hicold</h5>
+                            <h4>Холдильные столы</h4>
+                            <p>Многофункциональность оборудования позволяет оптимизировать пространство на кухне, сделать работу персонала максимально удобной и эффективной.</p>
+                        </div> 
+                        <img src="./commont.blocks/recomend/_img/plit2.png" alt="plita">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="solution">
+        <div class="container-small">
+            <div class="solutuon__wrap">
+                <div class="solution__text --title">
+                    <h1 class="solution__text__title">Комплексные решения оснащения столовых и кафе</h1>
+                    <p>Компания предлгает комплексное оснащение столовых, расторанов, кафе и баров в Моксве. Наши услуги построены по принципу полного цикла обслуживания предприятий общепита и бизнеса HoReCa.</p>
+                    <p>Иными словами, мы предлагаем проектирование «под ключ» и постгарантийное обслуживание. География работы компании охватывает всю страну. При этом в каждом регионе мы готовы предложить демократичные цены на профессиональное технологическое оборудование для столовой и оптимальные решения с точки зрения эффективности бизнеса, приемлемым уровнем производительности в условиях ограниченного бюджета.</p>
+                    <h1 class="solution__text__title-two --hide">Что мы предлагаем</h1>
+                    <p class="--hide">разработку технологического проекта кухни и производственной линии, дизайна ресторанного интерьера;</p>
+                    <p class="--hide">составление меню согласно концепции и оснащения бара (кафе, столовой); подбор посуды, текстиля под общий стиль; профессиональное оборудование для кафе, бара и ресторана, большой выбор современных моделей; доставку в любой регион РФ; монтажные и пуско-наладочные работы; автоматизацию производственного процесса, что позволяет определённое оборудование для бара;</p>
+                    <button>+</button>
+                </div>
+                <div class="solution__info">
+                    <div class="solution__info__wrap">
+                        <img src="./commont.blocks/solution/_img/big-logo.png" alt="logo">
+                        <h1 class="header-logo__text --hTitle">Столовая.РУ</h1>
+                        <p>создание оптимальных пишеблоков</p>
+                        <h2>Группа компаний</h2>
+                        <p>Показатели:</p>
+                        <h4 class="solution__info__text">На рынке: 5 лет</h4>
+                        <h4>Объем контрактов: 4 млрд.р.</h4>
+                        <h4>количество контрактов: 620</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__item--dark">
+            <div class="container-small footer__dark_wrap">
+                <div class="footer__item-menu">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="">Компания</a></li>
+                        <li><a href="">Портфолио</a></li>
+                        <li><a href="">Проектирование</a></li>
+                        <li><a href="">Ресторанам</a></li>
+                        <li><a href="">Застройщикам</a></li>
+                        <li><a href="">Гос.заказчикам</a></li>
+                        <li><a href="">Таблет-питание</a></li>
+                        <li><a href="">Сервис</a></li>
+                        <li><a href="">Новости</a></li>
+                        <li><a href="">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item-menu">
+                    <h4>Оборудование</h4>
+                    <ul>
+                        <li><a href="">Тепловое</a></li>
+                        <li><a href="">Холодильное</a></li>
+                        <li><a href="">Электромеханическое</a></li>
+                        <li><a href="">Посудомоечное</a></li>
+                        <li><a href="">Барное</a></li>
+                        <li><a href="">Хлебопекарное</a></li>
+                        <li><a href="">Лании раздачи</a></li>
+                        <li><a href="">Нейтральное</a></li>
+                        <li><a href="">Для фаст фуда</a></li>
+                        <li><a href="">Для залов</a></li>
+                        <li><a href="">Весовое</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item-menu">
+                    <h4>Преложения</h4>
+                    <ul>
+                        <li><a href="">Кафе, барам, ресторанам</a></li>
+                        <li><a href="">Дестким садам и школам</a></li>
+                        <li><a href="">Таблет-питание</a></li>
+                        <li><a href="">Для кондитерских</a></li>
+                        <li><a href="">Для пиццерий</a></li>
+                        <li><a href="">Для магазинов</a></li>
+                        <li><a href="">Для воинских частей</a></li>
+                        <li><a href="">Все предложения</a></li>
+                    </ul>
+                </div>
+                <div class="footer__item-contact">
+                    <h4>Контакты</h4>
+                    <div class="item-contact__call">
+                        <a href="tel:84951503191">8 495 150-31-91</a>
+                        <a href="tel:88005004344">8 800 500 43 44</a>
+                        <p>звонок бесплатный</p>
+                    </div>
+                    <div class="item-contact__time">
+                        <p>Пн-Пт</p>
+                        <p>09:00 до 18:00</p>
+                    </div>
+                    <div class="item-contact__mail">
+                        <a href="mailto:com@stolovay.ru">com@stolovay.ru</a>
+                        <a href="mailto:info@stolovay.ru">info@stolovay.ru</a>
+                    </div>
+                    <div class="item-contact__adress">
+                        <a target="_blank" href="https://yandex.ru/maps/213/moscow/house/ryazanskiy_prospekt_24k2/Z04YcQBkTUMEQFtvfXtzcXthZg==/?ll=37.774463%2C55.720722&z=17.17">
+                            <p>111524, Моксва,</p>
+                            <p>Рязанский проспект 24к2</p>
+                        </a>
+                        
+                    </div>
+                </div>
+                <div class="mobil__item-menu">
+                    <ul>
+                        <li><a href="/">Информация</a> <span>+</span></li>
+                        <li><a href="/">Оборудование</a><span>+</span></li>
+                        <li><a href="/">Преложения</a><span>+</span></li>
+                        <li><a href="/">Контакты</a><span>+</span></li>
+                        <li><a href="/">Реквизиты</a><span>+</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__item-darkest">
+            <div class="container-small footer__wrap">
+                <div class="footer__logo">
+                    <a href="">
+                        <img src="./commont.blocks/footer/_img/logo.png" alt="logo">
+                        <div class="logo__text">
+                            <h2>Столовая.РУ</h2>
+                            <p>Создание оптимальных пищеблоков</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="footer__work">
+                    <a href="/">Сайт разработан NTI-systems</a>
+                </div>
+            </div>
+        </div>
+        
+        
+    </footer>
+    <div class="shadow"></div>
+
+    <script src="./commont.blocks/header/popup.select.js"></script>
+    <script src="./commont.blocks/header/popup.search.js"></script>
+    <script src="./commont.blocks/header/hovers.js"></script>
+    <script src="./commont.blocks/header/popup.number.js"></script>
+    <script src="./commont.blocks/header/copy.btn.js"></script>
+    <script src="./commont.blocks/begest-menu/drop-down.js"></script>
+</body>
+</html>
