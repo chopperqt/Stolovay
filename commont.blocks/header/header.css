@@ -52,11 +52,17 @@
     color: #ffffff;
     text-decoration: none;
     display: flex;
+    height: 50px;
+
     align-items: center;
+}
+.header__top-menu a:hover {
+    background: #33bb6f;
 }
 .header__top-menu a img {
     margin-right: 5px;
 }
+
 .header__top-menu .top-menu__short {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
